@@ -71,7 +71,12 @@ export default function App() {
 
   return (
     <main>
-      <img style={topImageStyles} src="../images/blob5.png" />
+      <img
+        style={topImageStyles}
+        src="../images/blob5.png"
+        alt="blob5"
+        className="blob5-img"
+      />
       {!quizStarted ? (
         <div className="start-page">
           <h1 className="main-header">Quizzical</h1>
@@ -103,7 +108,12 @@ export default function App() {
           )}
         </div>
       )}
-      <img style={bottomImageStyles} src="../images/blob6.png" />
+      <img
+        style={bottomImageStyles}
+        src="../images/blob6.png"
+        className="blob6-img"
+        alt="blob6"
+      />
     </main>
   );
 }
